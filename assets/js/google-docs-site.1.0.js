@@ -1,9 +1,11 @@
+---
+---
 var siteData;
 
 $(function() {
 
 	//load the json
-	$.get( "/assets/data/binder.json", function( data ) {
+	$.get( "{{ site.url }}/assets/data/binder.json", function( data ) {
 
 		//did it load json data as string or as an object?
 		if (typeof data == "string")
